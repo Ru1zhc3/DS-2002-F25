@@ -1,0 +1,7 @@
+student_id,Major,GPA,is_cs_major,credits_taken
+1,Computer Science,4.0,Yes,20
+2,English,3.2,No,18
+3,Mechanical Engineering,3,No,22.5
+4,Biology,3.6,No,66.5
+5,Bussiness,4,No,12
+6,Math,3.8,No,30

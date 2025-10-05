@@ -1,0 +1,66 @@
+[
+  {
+    "course_id": "DS2002",
+    "section": "001",
+    "title": "Data Science Systems",
+    "level": 200,
+    "instructors": [
+      {
+        "name": "Austin Rivera",
+        "role": "Primary"
+      },
+      {
+        "name": "Heywood Williams-Tracy",
+        "role": "TA"
+      }
+    ]
+  },
+  {
+    "course_id": "CS4501",
+    "section": "001",
+    "title": "Autonomous Racing",
+    "level": 300,
+    "instructors": [
+      {
+        "name": "Madhur Behl",
+        "role": "Primary"
+      }
+    ]
+  },
+  {
+    "course_id": "CS3100",
+    "section": "002",
+    "title": "Data Structures and Algorithms II",
+    "level": 300,
+    "instructors": [
+      {
+        "name": "Raymond Pettie",
+        "role": "Primary"
+      }
+    ]
+  },
+  {
+    "course_id": "CS3140",
+    "section": "001",
+    "title": "Software Engineering Essentials",
+    "level": 300,
+    "instructors": [
+      {
+        "name": "Rich Nygn",
+        "role": "Primary"
+      }
+    ]
+  },
+  {
+    "course_id": "CS3130",
+    "section": "001",
+    "title": "Computer Organization II",
+    "level": 300,
+    "instructors": [
+      {
+        "name": "Charles Reeis",
+        "role": "Primary"
+      }
+    ]
+  }
+]
