@@ -6,8 +6,14 @@ import pandas as pd
 import glob
 
 def _load_lookup_data(lookup_dir):
+    """
+    Load and clean card data from JSON files in the lookup directory.
+    Returns a combined DataFrame with relevant market info.
+    """
     all_lookup_df = []
 
+    # Expected columns for a lookup dataframe; used as a fallback when no valid
+    # lookup files are present so downstream code can safely reference columns.
     required_cols = [
         'card_id', 'card_name', 'card_number',
         'set_id', 'set_name', 'card_market_value'
@@ -16,17 +22,40 @@ def _load_lookup_data(lookup_dir):
     for filename in os.listdir(lookup_dir):
         if filename.endswith(".json"):
             filepath = os.path.join(lookup_dir, filename)
-            with open(filepath, "r") as f:
-                data = json.load(f)
 
+            # Load JSON
+            try:
+                with open(filepath, "r") as f:
+                    data = json.load(f)
+            except (json.JSONDecodeError, OSError) as e:
+                # Skip files that aren't valid JSON or cannot be read
+                print(f"\u26a0 Skipping invalid lookup file {filename}: {e}", file=sys.stderr)
+                continue
+
+            # Ensure the JSON has the expected 'data' key containing a list
+            if not isinstance(data, dict) or 'data' not in data or not isinstance(data['data'], list):
+                print(f"\u26a0 Skipping lookup file {filename}: missing or invalid 'data' array", file=sys.stderr)
+                continue
+
+            # Flatten JSON data
             df = pd.json_normalize(data['data'])
 
-            df["card_market_value"] = (
-                df.get("tcgplayer.prices.holofoil.market")
-                .fillna(df.get("tcgplayer.prices.normal.market"))
-                .fillna(0.0)
-            )
+            # Add card_market_value column if possible; fall back to 0.0 when missing
+            try:
+                holo = df.get('tcgplayer.prices.holofoil.market')
+                normal = df.get('tcgplayer.prices.normal.market')
+                # If the columns exist, coalesce them, otherwise fill with 0.0
+                if holo is not None:
+                    card_market = holo.fillna(normal) if normal is not None else holo.fillna(0.0)
+                elif normal is not None:
+                    card_market = normal.fillna(0.0)
+                else:
+                    card_market = 0.0
+                df['card_market_value'] = card_market
+            except Exception:
+                df['card_market_value'] = 0.0
 
+            # Rename relevant columns
             df = df.rename(columns={
                 'id': 'card_id',
                 'name': 'card_name',
@@ -35,17 +64,24 @@ def _load_lookup_data(lookup_dir):
                 'set.name': 'set_name'
             })
 
+            # Keep only relevant columns
             required_cols = [
                 'card_id', 'card_name', 'card_number',
                 'set_id', 'set_name', 'card_market_value'
             ]
 
+            # Append clean df to list
             all_lookup_df.append(df[required_cols].copy())
 
+    # If no valid lookup files were read, return an empty DataFrame with the
+    # expected columns so callers can merge without error.
     if not all_lookup_df:
         return pd.DataFrame(columns=required_cols)
 
+    # Combine all dataframes
     lookup_df = pd.concat(all_lookup_df, ignore_index=True)
+
+    # Sort and drop duplicate card IDs, keeping the highest-value one
     lookup_df = lookup_df.sort_values(by='card_market_value', ascending=False)
     lookup_df = lookup_df.drop_duplicates(subset=['card_id'], keep='first')
 

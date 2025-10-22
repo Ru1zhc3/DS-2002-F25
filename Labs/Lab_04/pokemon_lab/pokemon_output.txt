@@ -15,29 +15,8 @@ Do you want to refresh ALL existing card sets? (yes/no)
 no
 Running production pipeline...
 Updating portfolio...
-Traceback (most recent call last):
-  File "/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab/./pipeline.py", line 18, in <module>
-    run_production_pipeline()
-  File "/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab/./pipeline.py", line 10, in run_production_pipeline
-    update_portfolio.main()
-  File "/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab/update_portfolio.py", line 134, in main
-    update_portfolio(inventory_dir="./card_inventory/",
-  File "/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab/update_portfolio.py", line 82, in update_portfolio
-    lookup_df = _load_lookup_data(str(lookup_dir))
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab/update_portfolio.py", line 20, in _load_lookup_data
-    data = json.load(f)
-           ^^^^^^^^^^^^
-  File "/usr/local/python/3.12.1/lib/python3.12/json/__init__.py", line 293, in load
-    return loads(fp.read(),
-           ^^^^^^^^^^^^^^^^
-  File "/usr/local/python/3.12.1/lib/python3.12/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/python/3.12.1/lib/python3.12/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/python/3.12.1/lib/python3.12/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-make: *** [Makefile:29: Portfolio_Build] Error 1
+⚠ Skipping invalid lookup file base1.json: Expecting value: line 1 column 1 (char 0)
+Error: Inventory is empty. No portfolio created.
+Generating summary...
+The portfolio is empty.
+Production pipeline completed.
