@@ -1,1 +1,361 @@
 card_id,card_name,card_number,set_id,set_name,card_market_value
+base4-1,Alakazam,1,base4,Base Set 2,37.01
+base4-2,Blastoise,2,base4,Base Set 2,107.85
+base4-3,Chansey,3,base4,Base Set 2,14.71
+base4-4,Charizard,4,base4,Base Set 2,304.88
+base4-5,Clefable,5,base4,Base Set 2,13.97
+base4-6,Clefairy,6,base4,Base Set 2,10.79
+base4-7,Gyarados,7,base4,Base Set 2,26.94
+base4-8,Hitmonchan,8,base4,Base Set 2,21.21
+base4-9,Magneton,9,base4,Base Set 2,12.14
+base4-10,Mewtwo,10,base4,Base Set 2,40.96
+base4-11,Nidoking,11,base4,Base Set 2,24.14
+base4-12,Nidoqueen,12,base4,Base Set 2,23.02
+base4-13,Ninetales,13,base4,Base Set 2,21.49
+base4-14,Pidgeot,14,base4,Base Set 2,27.41
+base4-15,Poliwrath,15,base4,Base Set 2,13.35
+base4-16,Raichu,16,base4,Base Set 2,33.18
+base4-17,Scyther,17,base4,Base Set 2,24.6
+base4-18,Venusaur,18,base4,Base Set 2,73.77
+base4-19,Wigglytuff,19,base4,Base Set 2,11.0
+base4-20,Zapdos,20,base4,Base Set 2,24.31
+base4-21,Beedrill,21,base4,Base Set 2,1.96
+base4-22,Dragonair,22,base4,Base Set 2,8.58
+base4-23,Dugtrio,23,base4,Base Set 2,3.3
+base4-24,Electabuzz,24,base4,Base Set 2,3.17
+base4-25,Electrode,25,base4,Base Set 2,3.87
+base4-26,Kangaskhan,26,base4,Base Set 2,3.15
+base4-27,Mr. Mime,27,base4,Base Set 2,6.03
+base4-28,Pidgeotto,28,base4,Base Set 2,3.72
+base4-29,Pinsir,29,base4,Base Set 2,3.35
+base4-30,Snorlax,30,base4,Base Set 2,9.34
+base4-31,Venomoth,31,base4,Base Set 2,3.31
+base4-32,Victreebel,32,base4,Base Set 2,2.8
+base4-33,Arcanine,33,base4,Base Set 2,2.1
+base4-34,Butterfree,34,base4,Base Set 2,1.58
+base4-35,Charmeleon,35,base4,Base Set 2,1.73
+base4-36,Dewgong,36,base4,Base Set 2,1.23
+base4-37,Dodrio,37,base4,Base Set 2,1.8
+base4-38,Dratini,38,base4,Base Set 2,0.99
+base4-39,Exeggutor,39,base4,Base Set 2,1.18
+base4-40,Farfetch'd,40,base4,Base Set 2,0.5
+base4-41,Fearow,41,base4,Base Set 2,1.32
+base4-42,Growlithe,42,base4,Base Set 2,1.21
+base4-43,Haunter,43,base4,Base Set 2,0.84
+base4-44,Ivysaur,44,base4,Base Set 2,3.6
+base4-45,Jynx,45,base4,Base Set 2,0.6
+base4-46,Kadabra,46,base4,Base Set 2,1.24
+base4-47,Kakuna,47,base4,Base Set 2,0.71
+base4-48,Lickitung,48,base4,Base Set 2,1.3
+base4-49,Machoke,49,base4,Base Set 2,0.54
+base4-50,Magikarp,50,base4,Base Set 2,0.9
+base4-51,Magmar,51,base4,Base Set 2,1.08
+base4-52,Marowak,52,base4,Base Set 2,1.87
+base4-53,Nidorina,53,base4,Base Set 2,0.62
+base4-54,Nidorino,54,base4,Base Set 2,1.55
+base4-55,Parasect,55,base4,Base Set 2,0.9
+base4-56,Persian,56,base4,Base Set 2,1.7
+base4-57,Poliwhirl,57,base4,Base Set 2,0.92
+base4-58,Raticate,58,base4,Base Set 2,0.9
+base4-59,Rhydon,59,base4,Base Set 2,1.8
+base4-60,Seaking,60,base4,Base Set 2,0.59
+base4-61,Seel,61,base4,Base Set 2,0.62
+base4-62,Tauros,62,base4,Base Set 2,2.96
+base4-63,Wartortle,63,base4,Base Set 2,1.74
+base4-64,Weepinbell,64,base4,Base Set 2,1.21
+base4-65,Abra,65,base4,Base Set 2,0.42
+base4-66,Bellsprout,66,base4,Base Set 2,0.44
+base4-67,Bulbasaur,67,base4,Base Set 2,2.24
+base4-68,Caterpie,68,base4,Base Set 2,0.43
+base4-69,Charmander,69,base4,Base Set 2,1.15
+base4-70,Cubone,70,base4,Base Set 2,0.81
+base4-71,Diglett,71,base4,Base Set 2,0.38
+base4-72,Doduo,72,base4,Base Set 2,0.44
+base4-73,Drowzee,73,base4,Base Set 2,0.44
+base4-74,Exeggcute,74,base4,Base Set 2,0.5
+base4-75,Gastly,75,base4,Base Set 2,0.47
+base4-76,Goldeen,76,base4,Base Set 2,0.38
+base4-77,Jigglypuff,77,base4,Base Set 2,0.74
+base4-78,Machop,78,base4,Base Set 2,0.42
+base4-79,Magnemite,79,base4,Base Set 2,0.39
+base4-80,Meowth,80,base4,Base Set 2,0.55
+base4-81,Metapod,81,base4,Base Set 2,0.43
+base4-82,Nidoran ♀,82,base4,Base Set 2,0.47
+base4-83,Nidoran ♂,83,base4,Base Set 2,0.59
+base4-84,Onix,84,base4,Base Set 2,0.83
+base4-85,Paras,85,base4,Base Set 2,0.38
+base4-86,Pidgey,86,base4,Base Set 2,0.55
+base4-87,Pikachu,87,base4,Base Set 2,2.15
+base4-88,Poliwag,88,base4,Base Set 2,0.4
+base4-89,Rattata,89,base4,Base Set 2,0.45
+base4-90,Rhyhorn,90,base4,Base Set 2,0.46
+base4-91,Sandshrew,91,base4,Base Set 2,0.35
+base4-92,Spearow,92,base4,Base Set 2,0.5
+base4-93,Squirtle,93,base4,Base Set 2,1.08
+base4-94,Starmie,94,base4,Base Set 2,0.5
+base4-95,Staryu,95,base4,Base Set 2,0.29
+base4-96,Tangela,96,base4,Base Set 2,0.35
+base4-97,Venonat,97,base4,Base Set 2,0.6
+base4-98,Voltorb,98,base4,Base Set 2,0.53
+base4-99,Vulpix,99,base4,Base Set 2,0.83
+base4-100,Weedle,100,base4,Base Set 2,0.32
+base4-101,Computer Search,101,base4,Base Set 2,2.71
+base4-102,Imposter Professor Oak,102,base4,Base Set 2,2.23
+base4-103,Item Finder,103,base4,Base Set 2,7.47
+base4-104,Lass,104,base4,Base Set 2,2.69
+base4-105,Pokémon Breeder,105,base4,Base Set 2,4.39
+base4-106,Pokémon Trader,106,base4,Base Set 2,3.23
+base4-107,Scoop Up,107,base4,Base Set 2,4.24
+base4-108,Super Energy Removal,108,base4,Base Set 2,2.51
+base4-109,Defender,109,base4,Base Set 2,0.33
+base4-110,Energy Retrieval,110,base4,Base Set 2,0.32
+base4-111,Full Heal,111,base4,Base Set 2,0.37
+base4-112,Maintenance,112,base4,Base Set 2,0.77
+base4-113,PlusPower,113,base4,Base Set 2,0.4
+base4-114,Pokémon Center,114,base4,Base Set 2,0.79
+base4-115,Pokédex,115,base4,Base Set 2,0.46
+base4-116,Professor Oak,116,base4,Base Set 2,1.29
+base4-117,Super Potion,117,base4,Base Set 2,0.32
+base4-118,Bill,118,base4,Base Set 2,0.33
+base4-119,Energy Removal,119,base4,Base Set 2,0.3
+base4-120,Gust of Wind,120,base4,Base Set 2,0.35
+base4-121,Poké Ball,121,base4,Base Set 2,0.31
+base4-122,Potion,122,base4,Base Set 2,0.24
+base4-123,Switch,123,base4,Base Set 2,0.32
+base4-124,Double Colorless Energy,124,base4,Base Set 2,2.28
+base4-125,Fighting Energy,125,base4,Base Set 2,0.29
+base4-126,Fire Energy,126,base4,Base Set 2,0.72
+base4-127,Grass Energy,127,base4,Base Set 2,0.28
+base4-128,Lightning Energy,128,base4,Base Set 2,0.38
+base4-129,Psychic Energy,129,base4,Base Set 2,0.3
+base4-130,Water Energy,130,base4,Base Set 2,0.26
+base4-4,Charizard,4,base4,Base Set 2,304.88
+base4-2,Blastoise,2,base4,Base Set 2,107.85
+base4-18,Venusaur,18,base4,Base Set 2,73.77
+base4-10,Mewtwo,10,base4,Base Set 2,40.96
+base4-20,Zapdos,20,base4,Base Set 2,24.31
+base4-16,Raichu,16,base4,Base Set 2,33.18
+base4-17,Scyther,17,base4,Base Set 2,24.6
+base4-19,Wigglytuff,19,base4,Base Set 2,11.0
+base4-14,Pidgeot,14,base4,Base Set 2,27.41
+base4-12,Nidoqueen,12,base4,Base Set 2,23.02
+base4-11,Nidoking,11,base4,Base Set 2,24.14
+base4-1,Alakazam,1,base4,Base Set 2,37.01
+base4-7,Gyarados,7,base4,Base Set 2,26.94
+base4-3,Chansey,3,base4,Base Set 2,14.71
+base4-5,Clefable,5,base4,Base Set 2,13.97
+base4-87,Pikachu,87,base4,Base Set 2,2.15
+base4-67,Bulbasaur,67,base4,Base Set 2,2.24
+base4-69,Charmander,69,base4,Base Set 2,1.15
+base4-93,Squirtle,93,base4,Base Set 2,1.08
+base4-86,Pidgey,86,base4,Base Set 2,0.55
+base4-89,Rattata,89,base4,Base Set 2,0.45
+base4-6,Clefairy,6,base4,Base Set 2,10.79
+base4-50,Magikarp,50,base4,Base Set 2,0.9
+base4-65,Abra,65,base4,Base Set 2,0.42
+base4-78,Machop,78,base4,Base Set 2,0.42
+base4-79,Magnemite,79,base4,Base Set 2,0.39
+base4-75,Gastly,75,base4,Base Set 2,0.47
+base4-99,Vulpix,99,base4,Base Set 2,0.83
+base4-60,Seaking,60,base4,Base Set 2,0.59
+base4-100,Weedle,100,base4,Base Set 2,0.32
+base4-68,Caterpie,68,base4,Base Set 2,0.43
+base4-88,Poliwag,88,base4,Base Set 2,0.4
+base4-57,Poliwhirl,57,base4,Base Set 2,0.92
+base4-44,Ivysaur,44,base4,Base Set 2,3.6
+base4-63,Wartortle,63,base4,Base Set 2,1.74
+base4-35,Charmeleon,35,base4,Base Set 2,1.73
+base4-46,Kadabra,46,base4,Base Set 2,1.24
+base4-49,Machoke,49,base4,Base Set 2,0.54
+base4-47,Kakuna,47,base4,Base Set 2,0.71
+base4-81,Metapod,81,base4,Base Set 2,0.43
+base4-22,Dragonair,22,base4,Base Set 2,8.58
+base4-38,Dratini,38,base4,Base Set 2,0.99
+base4-42,Growlithe,42,base4,Base Set 2,1.21
+base4-33,Arcanine,33,base4,Base Set 2,2.1
+base4-25,Electrode,25,base4,Base Set 2,3.87
+base4-24,Electabuzz,24,base4,Base Set 2,3.17
+base4-124,Double Colorless Energy,124,base4,Base Set 2,2.28
+base4-116,Professor Oak,116,base4,Base Set 2,1.29
+base4-118,Bill,118,base4,Base Set 2,0.33
+base4-119,Energy Removal,119,base4,Base Set 2,0.3
+base1-1,Alakazam,1,base1,Base,56.53
+base1-2,Blastoise,2,base1,Base,155.97
+base1-3,Chansey,3,base1,Base,30.64
+base1-4,Charizard,4,base1,Base,457.11
+base1-5,Clefairy,5,base1,Base,25.87
+base1-6,Gyarados,6,base1,Base,32.99
+base1-7,Hitmonchan,7,base1,Base,18.56
+base1-8,Machamp,8,base1,Base,0.0
+base1-9,Magneton,9,base1,Base,20.8
+base1-10,Mewtwo,10,base1,Base,35.77
+base1-11,Nidoking,11,base1,Base,27.78
+base1-12,Ninetales,12,base1,Base,23.3
+base1-13,Poliwrath,13,base1,Base,21.86
+base1-14,Raichu,14,base1,Base,44.92
+base1-15,Venusaur,15,base1,Base,113.99
+base1-16,Zapdos,16,base1,Base,38.51
+base1-17,Beedrill,17,base1,Base,3.7
+base1-18,Dragonair,18,base1,Base,15.28
+base1-19,Dugtrio,19,base1,Base,6.68
+base1-20,Electabuzz,20,base1,Base,7.25
+base1-21,Electrode,21,base1,Base,6.26
+base1-22,Pidgeotto,22,base1,Base,8.49
+base1-23,Arcanine,23,base1,Base,3.33
+base1-24,Charmeleon,24,base1,Base,1.65
+base1-25,Dewgong,25,base1,Base,2.34
+base1-26,Dratini,26,base1,Base,2.16
+base1-27,Farfetch'd,27,base1,Base,1.29
+base1-28,Growlithe,28,base1,Base,1.19
+base1-29,Haunter,29,base1,Base,1.49
+base1-30,Ivysaur,30,base1,Base,2.28
+base1-31,Jynx,31,base1,Base,0.8
+base1-32,Kadabra,32,base1,Base,1.5
+base1-33,Kakuna,33,base1,Base,1.07
+base1-34,Machoke,34,base1,Base,0.68
+base1-35,Magikarp,35,base1,Base,2.34
+base1-36,Magmar,36,base1,Base,2.86
+base1-37,Nidorino,37,base1,Base,1.88
+base1-38,Poliwhirl,38,base1,Base,1.65
+base1-39,Porygon,39,base1,Base,2.47
+base1-40,Raticate,40,base1,Base,2.11
+base1-41,Seel,41,base1,Base,1.08
+base1-42,Wartortle,42,base1,Base,2.61
+base1-43,Abra,43,base1,Base,0.61
+base1-44,Bulbasaur,44,base1,Base,2.04
+base1-45,Caterpie,45,base1,Base,1.09
+base1-46,Charmander,46,base1,Base,1.59
+base1-47,Diglett,47,base1,Base,0.55
+base1-48,Doduo,48,base1,Base,1.33
+base1-49,Drowzee,49,base1,Base,0.53
+base1-50,Gastly,50,base1,Base,0.71
+base1-51,Koffing,51,base1,Base,0.5
+base1-52,Machop,52,base1,Base,0.35
+base1-53,Magnemite,53,base1,Base,0.55
+base1-54,Metapod,54,base1,Base,0.78
+base1-55,Nidoran ♂,55,base1,Base,0.48
+base1-56,Onix,56,base1,Base,0.66
+base1-57,Pidgey,57,base1,Base,1.21
+base1-58,Pikachu,58,base1,Base,3.07
+base1-59,Poliwag,59,base1,Base,0.49
+base1-60,Ponyta,60,base1,Base,0.35
+base1-61,Rattata,61,base1,Base,0.6
+base1-62,Sandshrew,62,base1,Base,0.66
+base1-63,Squirtle,63,base1,Base,2.9
+base1-64,Starmie,64,base1,Base,0.51
+base1-65,Staryu,65,base1,Base,0.35
+base1-66,Tangela,66,base1,Base,0.87
+base1-67,Voltorb,67,base1,Base,1.56
+base1-68,Vulpix,68,base1,Base,0.46
+base1-69,Weedle,69,base1,Base,0.43
+base1-70,Clefairy Doll,70,base1,Base,5.61
+base1-71,Computer Search,71,base1,Base,3.16
+base1-72,Devolution Spray,72,base1,Base,4.83
+base1-73,Impostor Professor Oak,73,base1,Base,6.39
+base1-74,Item Finder,74,base1,Base,8.33
+base1-75,Lass,75,base1,Base,2.59
+base1-76,Pokémon Breeder,76,base1,Base,7.05
+base1-77,Pokémon Trader,77,base1,Base,4.22
+base1-78,Scoop Up,78,base1,Base,6.89
+base1-79,Super Energy Removal,79,base1,Base,3.05
+base1-80,Defender,80,base1,Base,1.42
+base1-81,Energy Retrieval,81,base1,Base,0.79
+base1-82,Full Heal,82,base1,Base,1.51
+base1-83,Maintenance,83,base1,Base,2.36
+base1-84,PlusPower,84,base1,Base,0.65
+base1-85,Pokémon Center,85,base1,Base,1.62
+base1-86,Pokémon Flute,86,base1,Base,2.81
+base1-87,Pokédex,87,base1,Base,0.41
+base1-88,Professor Oak,88,base1,Base,1.44
+base1-89,Revive,89,base1,Base,2.33
+base1-90,Super Potion,90,base1,Base,0.32
+base1-91,Bill,91,base1,Base,0.36
+base1-92,Energy Removal,92,base1,Base,0.52
+base1-93,Gust of Wind,93,base1,Base,0.29
+base1-94,Potion,94,base1,Base,0.26
+base1-95,Switch,95,base1,Base,0.26
+base1-96,Double Colorless Energy,96,base1,Base,5.62
+base1-97,Fighting Energy,97,base1,Base,0.25
+base1-98,Fire Energy,98,base1,Base,0.31
+base1-99,Grass Energy,99,base1,Base,0.28
+base1-100,Lightning Energy,100,base1,Base,0.33
+base1-101,Psychic Energy,101,base1,Base,0.36
+base1-102,Water Energy,102,base1,Base,0.28
+base1-4,Charizard,4,base1,Base,457.11
+base1-2,Blastoise,2,base1,Base,155.97
+base1-15,Venusaur,15,base1,Base,113.99
+base1-10,Mewtwo,10,base1,Base,35.77
+base1-16,Zapdos,16,base1,Base,38.51
+base1-14,Raichu,14,base1,Base,44.92
+base1-1,Alakazam,1,base1,Base,56.53
+base1-3,Chansey,3,base1,Base,30.64
+base1-12,Ninetales,12,base1,Base,23.3
+base1-8,Machamp,8,base1,Base,0.0
+base1-4,Charizard,4,base1,Base,457.11
+base1-10,Mewtwo,10,base1,Base,35.77
+base1-58,Pikachu,58,base1,Base,3.07
+base1-44,Bulbasaur,44,base1,Base,2.04
+base1-46,Charmander,46,base1,Base,1.59
+base1-63,Squirtle,63,base1,Base,2.9
+base1-57,Pidgey,57,base1,Base,1.21
+base1-61,Rattata,61,base1,Base,0.6
+base1-5,Clefairy,5,base1,Base,25.87
+base1-31,Jynx,31,base1,Base,0.8
+base1-35,Magikarp,35,base1,Base,2.34
+base1-43,Abra,43,base1,Base,0.61
+base1-52,Machop,52,base1,Base,0.35
+base1-53,Magnemite,53,base1,Base,0.55
+base1-51,Koffing,51,base1,Base,0.5
+base1-50,Gastly,50,base1,Base,0.71
+base1-68,Vulpix,68,base1,Base,0.46
+base1-60,Ponyta,60,base1,Base,0.35
+base1-49,Drowzee,49,base1,Base,0.53
+base1-47,Diglett,47,base1,Base,0.55
+base1-69,Weedle,69,base1,Base,0.43
+base1-45,Caterpie,45,base1,Base,1.09
+base1-55,Nidoran ♂,55,base1,Base,0.48
+base1-59,Poliwag,59,base1,Base,0.49
+base1-38,Poliwhirl,38,base1,Base,1.65
+base1-30,Ivysaur,30,base1,Base,2.28
+base1-42,Wartortle,42,base1,Base,2.61
+base1-24,Charmeleon,24,base1,Base,1.65
+base1-32,Kadabra,32,base1,Base,1.5
+base1-34,Machoke,34,base1,Base,0.68
+base1-33,Kakuna,33,base1,Base,1.07
+base1-54,Metapod,54,base1,Base,0.78
+base1-18,Dragonair,18,base1,Base,15.28
+base1-26,Dratini,26,base1,Base,2.16
+base1-28,Growlithe,28,base1,Base,1.19
+base1-23,Arcanine,23,base1,Base,3.33
+base1-21,Electrode,21,base1,Base,6.26
+base1-20,Electabuzz,20,base1,Base,7.25
+base1-64,Starmie,64,base1,Base,0.51
+base1-65,Staryu,65,base1,Base,0.35
+base1-96,Double Colorless Energy,96,base1,Base,5.62
+base1-88,Professor Oak,88,base1,Base,1.44
+base1-91,Bill,91,base1,Base,0.36
+base1-92,Energy Removal,92,base1,Base,0.52
+base1-87,Pokédex,87,base1,Base,0.41
+base1-95,Switch,95,base1,Base,0.26
+base1-94,Potion,94,base1,Base,0.26
+base1-90,Super Potion,90,base1,Base,0.32
+base1-85,Pokémon Center,85,base1,Base,1.62
+base1-81,Energy Retrieval,81,base1,Base,0.79
+base1-98,Fire Energy,98,base1,Base,0.31
+base1-100,Lightning Energy,100,base1,Base,0.33
+base1-102,Water Energy,102,base1,Base,0.28
+base1-99,Grass Energy,99,base1,Base,0.28
+base1-101,Psychic Energy,101,base1,Base,0.36
+base1-97,Fighting Energy,97,base1,Base,0.25
+base1-96,Double Colorless Energy,96,base1,Base,5.62
+base1-4,Charizard,4,base1,Base,457.11
+base1-2,Blastoise,2,base1,Base,155.97
+base1-15,Venusaur,15,base1,Base,113.99
+base1-10,Mewtwo,10,base1,Base,35.77
+base1-16,Zapdos,16,base1,Base,38.51
+base1-6,Gyarados,6,base1,Base,32.99
+base1-13,Poliwrath,13,base1,Base,21.86
+base1-11,Nidoking,11,base1,Base,27.78
+base1-7,Hitmonchan,7,base1,Base,18.56
+base1-9,Magneton,9,base1,Base,20.8
+base1-3,Chansey,3,base1,Base,30.64

@@ -6,56 +6,25 @@ import pandas as pd
 import glob
 
 def _load_lookup_data(lookup_dir):
-    """
-    Load and clean card data from JSON files in the lookup directory.
-    Returns a combined DataFrame with relevant market info.
-    """
     all_lookup_df = []
-
-    # Expected columns for a lookup dataframe; used as a fallback when no valid
-    # lookup files are present so downstream code can safely reference columns.
     required_cols = [
         'card_id', 'card_name', 'card_number',
         'set_id', 'set_name', 'card_market_value'
     ]
-
     for filename in os.listdir(lookup_dir):
         if filename.endswith(".json"):
             filepath = os.path.join(lookup_dir, filename)
-
-            # Load JSON
-            try:
-                with open(filepath, "r") as f:
-                    data = json.load(f)
-            except (json.JSONDecodeError, OSError) as e:
-                # Skip files that aren't valid JSON or cannot be read
-                print(f"\u26a0 Skipping invalid lookup file {filename}: {e}", file=sys.stderr)
-                continue
-
-            # Ensure the JSON has the expected 'data' key containing a list
-            if not isinstance(data, dict) or 'data' not in data or not isinstance(data['data'], list):
-                print(f"\u26a0 Skipping lookup file {filename}: missing or invalid 'data' array", file=sys.stderr)
-                continue
-
-            # Flatten JSON data
+            with open(filepath, "r") as f:
+                data = json.load(f)
+            
             df = pd.json_normalize(data['data'])
 
-            # Add card_market_value column if possible; fall back to 0.0 when missing
-            try:
-                holo = df.get('tcgplayer.prices.holofoil.market')
-                normal = df.get('tcgplayer.prices.normal.market')
-                # If the columns exist, coalesce them, otherwise fill with 0.0
-                if holo is not None:
-                    card_market = holo.fillna(normal) if normal is not None else holo.fillna(0.0)
-                elif normal is not None:
-                    card_market = normal.fillna(0.0)
-                else:
-                    card_market = 0.0
-                df['card_market_value'] = card_market
-            except Exception:
-                df['card_market_value'] = 0.0
+            df['card_market_value'] = (
+                df['tcgplayer.prices.holofoil.market']
+                .fillna(df['tcgplayer.prices.normal.market'])
+                .fillna(0.0)
+            )
 
-            # Rename relevant columns
             df = df.rename(columns={
                 'id': 'card_id',
                 'name': 'card_name',
@@ -64,37 +33,27 @@ def _load_lookup_data(lookup_dir):
                 'set.name': 'set_name'
             })
 
-            # Keep only relevant columns
             required_cols = [
                 'card_id', 'card_name', 'card_number',
                 'set_id', 'set_name', 'card_market_value'
             ]
 
-            # Append clean df to list
             all_lookup_df.append(df[required_cols].copy())
 
-    # If no valid lookup files were read, return an empty DataFrame with the
-    # expected columns so callers can merge without error.
     if not all_lookup_df:
         return pd.DataFrame(columns=required_cols)
 
-    # Combine all dataframes
     lookup_df = pd.concat(all_lookup_df, ignore_index=True)
-
-    # Sort and drop duplicate card IDs, keeping the highest-value one
     lookup_df = lookup_df.sort_values(by='card_market_value', ascending=False)
     lookup_df = lookup_df.drop_duplicates(subset=['card_id'], keep='first')
-
     return lookup_df
 
 
 def _load_inventory_data(inventory_dir):
     inventory_data = []
-    for filename in os.listdir(inventory_dir):
-        if filename.endswith(".csv"):
-            filepath = os.path.join(inventory_dir, filename)
-            df = pd.read_csv(filepath)
-            inventory_data.append(df)
+    for file in inventory_dir.glob('*.csv'):
+        df = pd.read_csv(file)
+        inventory_data.append(df)
 
     if not inventory_data:
         return pd.DataFrame()
@@ -114,15 +73,15 @@ def update_portfolio(inventory_dir, lookup_dir, output_file):
         inventory_dir = (base_dir / inventory_dir).resolve()
     if not lookup_dir.is_absolute():
         lookup_dir = (base_dir / lookup_dir).resolve()
-
-    lookup_df = _load_lookup_data(str(lookup_dir))
-    inventory_df = _load_inventory_data(str(inventory_dir))
+    lookup_df = _load_lookup_data(lookup_dir)
+    inventory_df = _load_inventory_data(inventory_dir)
 
     if inventory_df.empty:
         print("Error: Inventory is empty. No portfolio created.", file=sys.stderr)
         headers = [
-                'card_id', 'card_name', 'card_number',
-                'set_id', 'set_name', 'card_market_value'
+            'card_id', 'card_name', 'card_number',
+            'set_id', 'set_name', 'card_market_value',
+            'binder_name', 'page_number', 'slot_number'
         ]
         pd.DataFrame(columns=headers).to_csv(output_file, index=False)
         return
@@ -135,15 +94,17 @@ def update_portfolio(inventory_dir, lookup_dir, output_file):
         suffixes=('_inv', '_lookup')
     )
 
-    merged_df['card_market_value'] = merged_df['card_market_value'].fillna(0.0)
+    merged_df['card_name'] = merged_df['card_name_lookup'].combine_first(merged_df['card_name_inv'])
+    merged_df['card_number'] = merged_df['card_number_lookup'].combine_first(merged_df['card_number_inv'])
+    merged_df['set_id'] = merged_df['set_id_lookup'].combine_first(merged_df['set_id_inv'])
     merged_df['set_name'] = merged_df['set_name'].fillna('NOT_FOUND')
-
+    merged_df['card_market_value'] = merged_df['card_market_value'].fillna(0.0)
     merged_df['index'] = (
-        merged_df['binder_name'].astype(str) + "-" +
-        merged_df['page_number'].astype(str) + "-" +
-        merged_df['slot_number'].astype(str)
+    merged_df['binder_name'].astype(str) + "-" +
+    merged_df['page_number'].astype(str) + "-" +
+    merged_df['slot_number'].astype(str)
     )
-
+    merged_df.sort_values('card_market_value', ascending=False)
     for col in ('card_name_inv', 'card_name_lookup'):
         if col in merged_df.columns:
             merged_df.drop(columns=[col], inplace=True)
@@ -175,7 +136,7 @@ def main():
 def test():
     update_portfolio(inventory_dir="./card_inventory_test/",
                      lookup_dir="./card_set_lookup_test/",
-                     output_file="card_portfolio_test.csv"
+                     output_file="./test_card_portfolio.csv"
     )
 
 if __name__ == "__main__":

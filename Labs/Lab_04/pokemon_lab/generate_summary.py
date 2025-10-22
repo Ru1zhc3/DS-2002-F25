@@ -23,7 +23,6 @@ def generate_summary(portfolio_file):
     print(f"   - Name: {most_valuable_card['card_name']}")
     print(f"   - ID: {most_valuable_card['set_id']}-{most_valuable_card['card_number']}")
     print(f"   - Market Value: ${most_valuable_card['card_market_value']:,.2f}")
-    print("-" * 40)
 
 def main():
     generate_summary(portfolio_file="card_portfolio.csv")

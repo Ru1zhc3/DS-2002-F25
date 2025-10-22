@@ -15,8 +15,12 @@ Do you want to refresh ALL existing card sets? (yes/no)
 no
 Running production pipeline...
 Updating portfolio...
-⚠ Skipping invalid lookup file base1.json: Expecting value: line 1 column 1 (char 0)
-Error: Inventory is empty. No portfolio created.
+Portfolio updated and saved to card_portfolio.csv
 Generating summary...
-The portfolio is empty.
+Portfolio Summary Report:
+Total Portfolio Value: $5,680.51
+Most Valuable Card:
+   - Name: Charizard
+   - ID: base1-4
+   - Market Value: $457.11
 Production pipeline completed.
